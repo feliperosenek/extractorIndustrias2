@@ -1,5 +1,5 @@
 
-function configBots(bot) {
+function configBots(bot, params) {
     let ordemBusca;
    if (params.bot == 1) {
     ordemBusca = '&& id >= 1 && id <= 2'
