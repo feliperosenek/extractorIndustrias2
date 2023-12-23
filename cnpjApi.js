@@ -110,6 +110,7 @@ if (params.bot == 15) {
         pageRound = data.paginacao.paginas
       }
 
+
       for (var t = 0; t < pageRound; t++) {
         // --> Define uma página aleatória
         if (pageRound > params.paginas) {
