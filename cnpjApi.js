@@ -13,7 +13,7 @@ const { addConsoleHandler } = require('selenium-webdriver/lib/logging');
 const params = minimist(process.argv.slice(2))
 //const configBots = require('./bots-config.js');
 
-
+//xx
 const sequelize = new Sequelize("eduard72_" + params.bd + "", "eduard72_wp625", "37@S0DSm(p", {
   host: 'sh-pro20.hostgator.com.br',
   dialect: "mysql",
