@@ -85,7 +85,7 @@ if (params.bot == 15) {
     ordemBusca = '&& id >= 29 && id <= 33'
 }
  
-    var cnaes = await sequelize.query("SELECT cnae FROM `cnaes` WHERE statusBot" + params.bot + "=0 " + ordemBusca + " ORDER BY RAND()", {
+    var cnaes = await sequelize.query("SELECT id, cnae FROM `cnaes` WHERE statusBot" + params.bot + "=0 " + ordemBusca + " ORDER BY RAND()", {
       type: QueryTypes.SELECT
     });
 
@@ -101,7 +101,7 @@ if (params.bot == 15) {
         1
       );
 
-      console.log(" CNAE: " + cnaesSearch + "- total: " + data.paginacao.total + "  |" + (i + 1) + "º de " + cnaes.length + " | Páginas: " + data.paginacao.paginas)
+      console.log("cnae id: "+cnaes[i].id+" -CNAE: " + cnaesSearch + "- total: " + data.paginacao.total + "  |" + (i + 1) + "º de " + cnaes.length + " | Páginas: " + data.paginacao.paginas)
       console.log(" - - " + params.acao + " - - ");
 
       var pageRound = params.paginas
