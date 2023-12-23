@@ -85,7 +85,7 @@ if (params.bot == 15) {
     ordemBusca = '&& id >= 29 && id <= 33'
 }
  
-    var cnaes = await sequelize.query("SELECT cnae FROM `cnaes` WHERE statusBot" + params.bot + "=0" + ordemBusca + " ORDER BY RAND()", {
+    var cnaes = await sequelize.query("SELECT cnae FROM `cnaes` WHERE statusBot" + params.bot + "=0 " + ordemBusca + " ORDER BY RAND()", {
       type: QueryTypes.SELECT
     });
 
