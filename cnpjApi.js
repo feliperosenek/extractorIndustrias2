@@ -95,7 +95,7 @@ if (params.bot == 15) {
       // pesquisa por cnae
       const data = await consultarCNPJ.pesquisa({
         atividade_principal_id: cnaesSearch,
-        estado_id: 33
+        estado_id: 31
       },
         token,
         1
@@ -124,7 +124,7 @@ if (params.bot == 15) {
         
         const data2 = await consultarCNPJ.pesquisa({ // --> Consulta o CNAE
           atividade_principal_id: cnaesSearch,
-          estado_id: 33
+          estado_id: 31
         },
           token,
           page
